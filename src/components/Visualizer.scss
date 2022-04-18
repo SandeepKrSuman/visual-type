@@ -1,0 +1,23 @@
+@use 'variables' as v;
+
+.visual-container {
+    width: v.$container-width;
+    height: v.$container-height;
+    text-align: center;
+    border-top: v.$btop;
+    border-top-left-radius: v.$rad;
+    border-top-right-radius: v.$rad;
+    background-color: v.$bg-color;
+    margin: auto;
+}
+
+.word-box {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -webkit-transform: v.$transy;
+    -ms-transform: v.$transy;
+    transform: v.$transy;
+    font-family: v.$font-fam;
+    letter-spacing: v.$space;
+}
